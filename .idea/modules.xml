@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EsberFX.iml" filepath="$PROJECT_DIR$/EsberFX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pluginimplcanvas/pluginimplcanvas.iml" filepath="$PROJECT_DIR$/pluginimplcanvas/pluginimplcanvas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pluginimplelasticsearch/pluginimplelasticsearch.iml" filepath="$PROJECT_DIR$/pluginimplelasticsearch/pluginimplelasticsearch.iml" />
+    </modules>
+  </component>
+</project>

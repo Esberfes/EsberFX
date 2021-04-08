@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile name="Annotation profile for EsberFX" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processor name="org.pf4j.processor.ExtensionAnnotationProcessor" />
+        <module name="core" />
+        <module name="pluginimplcanvas" />
+        <module name="pluginimplelasticsearch" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="core" target="8" />
+      <module name="EsberFX" target="8" />
+      <module name="pluginimplcanvas" target="8" />
+      <module name="pluginimplelasticsearch" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

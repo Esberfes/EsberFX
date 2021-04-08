@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+<?import com.sun.javafx.scene.control.skin.SplitPaneSkin.Content?>
+<?import javafx.scene.effect.DropShadow?>
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0"
+         xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="com.esberfes.plugin.core.Controller">
+    <tabs>
+        <Tab text="Plugins" closable="false">
+            <content>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="100"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <TableView fx:id="pluginsInfo"  GridPane.columnIndex="0">
+                            <columns>
+                                <TableColumn text="Plugin ID">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="pluginId"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+
+                                <TableColumn text="State">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="pluginState"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+
+                                <TableColumn text="Extensions" cellValueFactory="${controller.pluginWrapperStringPropertyValueFactory}">
+                                </TableColumn>
+
+
+                                <TableColumn text="Load" cellFactory="${controller.columnTableCellCallback}">
+
+                                </TableColumn>
+
+                            </columns>
+                        </TableView>
+
+                    </children>
+                </GridPane>
+            </content>
+        </Tab>
+    </tabs>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" />
+    </effect>
+</TabPane>
